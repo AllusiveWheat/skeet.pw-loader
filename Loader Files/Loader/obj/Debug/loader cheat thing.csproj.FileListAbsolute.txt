@@ -20,3 +20,7 @@ G:\C++\!git\skeet.pw-loader\Loader Files\Loader\obj\Debug\loader cheat thing.csp
 G:\C++\!git\skeet.pw-loader\Loader Files\Loader\obj\Debug\loader cheat thing.csproj.CoreCompileInputs.cache
 G:\C++\!git\skeet.pw-loader\Loader Files\Loader\obj\Debug\loader.exe
 G:\C++\!git\skeet.pw-loader\Loader Files\Loader\obj\Debug\loader.pdb
+G:\C++\!git\skeet.pw-loader\Loader Files\Loader\bin\Debug\loader.exe.config
+G:\C++\!git\skeet.pw-loader\Loader Files\Loader\bin\Debug\loader.exe
+G:\C++\!git\skeet.pw-loader\Loader Files\Loader\bin\Debug\loader.pdb
+G:\C++\!git\skeet.pw-loader\Loader Files\Loader\obj\Debug\loader cheat thing.csproj.Fody.CopyLocal.cache

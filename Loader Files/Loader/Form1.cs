@@ -50,11 +50,11 @@ namespace Loader
 
         private bool sub()
         {
-            if (GET2.Download($"{adress}info.php/?username=" + login.Text + "&isMemberOf") == "nosub" || GET2.Download($"{adress}info.php/?username=" + login.Text + "&expire") == "nosub")
+            if (GET2.Download($"{adress}mybb.php/?username=" + login.Text + "&isMemberOf") == "nosub" || GET2.Download($"{adress}mybb.php/?username=" + login.Text + "&expire") == "nosub")
             {
                 return false;
             }
-            else if (GET2.Download($"{adress}info.php/?username=" + login.Text + "&isMemberOf") != "nosub" || GET2.Download($"{adress}info.php/?username=" + login.Text + "&expire") != "nosub")
+            else if (GET2.Download($"{adress}mybb.php/?username=" + login.Text + "&isMemberOf") != "nosub" || GET2.Download($"{adress}mybb.php/?username=" + login.Text + "&expire") != "nosub")
             {
                 return true;
             }
@@ -64,7 +64,7 @@ namespace Loader
         private bool hwidcheck()
         {
             hwidstring = HWDI.GetMachineGuid();
-            if (GET2.Download($"{adress}hwid.php/?username=" + login.Text + "&hwid=" + hwidstring) == "0" || GET2.Download($"{adress}info.php/?username=" + login.Text + "&expire") == "4")
+            if (GET2.Download($"{adress}hwid.php/?username=" + login.Text + "&hwid=" + hwidstring) == "0" || GET2.Download($"{adress}mybb.php/?username=" + login.Text + "&expire") == "4")
             {
                 return false;
             }
@@ -77,7 +77,7 @@ namespace Loader
         
         private void versions()
         {
-            if (GET2.Download($"{adress}info.php?version") != version)
+            if (GET2.Download($"{adress}mybb.php?version") != version)
             {
                 gunaGradientButton1.Enabled = false;
                 login.Enabled = false;
@@ -147,7 +147,7 @@ namespace Loader
                     if (sub())
                     {
                         {
-                            if (GET2.Download($"{adress}info.php?username={login.Text}&password={password.Text}") == "success")
+                            if (GET2.Download($"{adress}mybb.php?username={login.Text}&password={password.Text}") == "success")
                             {
                                 StreamWriter file = new StreamWriter(@"C:\cheatname\loader\account.cheatname");
                                 string encode_login = base64.encode(login.Text);
