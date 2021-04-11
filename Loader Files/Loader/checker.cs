@@ -32,6 +32,7 @@ namespace cheatname
             killproc("x64dbg");
             killproc("ProcessHacker");
             killproc("Cheat Engine.exe");
+
         }
     }
 }
